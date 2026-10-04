@@ -1,0 +1,8 @@
+{"elements": [
+ {"type":"node","id":1,"lat":12.935,"lon":77.624,"tags":{"amenity":"dentist","name":"Smile Care Dental","phone":"+91 98450 12345","website":"https://smilecare.example","addr:suburb":"Koramangala","opening_hours":"Mo-Sa 10:00-20:00"}},
+ {"type":"node","id":2,"lat":12.936,"lon":77.625,"tags":{"shop":"hairdresser","name":"Glow Salon","contact:phone":"080 4123 4567","website":"https://www.instagram.com/glowsalon"}},
+ {"type":"way","id":3,"center":{"lat":12.97,"lon":77.64},"tags":{"leisure":"fitness_centre","name":"Cult Fit","brand":"Cult.fit","website":"https://chatgym.example"}},
+ {"type":"node","id":4,"lat":12.91,"lon":77.64,"tags":{"office":"estate_agent","name":"Prime Homes Realty","email":"hello@primehomes.example"}},
+ {"type":"node","id":5,"lat":12.92,"lon":77.59,"tags":{"amenity":"cafe","name":"Brew Point"}},
+ {"type":"node","id":6,"lat":12.92,"lon":77.59,"tags":{"amenity":"clinic"}}
+]}
