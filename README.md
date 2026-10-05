@@ -1,4 +1,11 @@
-# DIVI-STUDIO: Bengaluru Lead Finder
+# DIVI-STUDIO
+
+Tools for a zero-budget AI automation business:
+
+- **[Lead finder](#bengaluru-lead-finder)** (`leadfinder/`): finds and ranks Bengaluru small businesses that could use AI chatbots.
+- **[WhatsApp AI assistant demo](whatsapp-assistant/README.md)** (`whatsapp-assistant/`): a sample WhatsApp bot for a fictional grocery and milk subscription store, to show prospective clients.
+
+## Bengaluru Lead Finder
 
 A free command-line tool that finds small and mid-size businesses in Bengaluru that are good
 prospects for AI chatbots and automation. It ranks them and gives you their public contact
