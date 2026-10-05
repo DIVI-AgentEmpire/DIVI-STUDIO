@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hasiru Basket Assistant</title>
+<style>
+:root{--bg:#f6f8f4;--fg:#1c2a1c;--muted:#5d6b5d;--card:#fff;--line:#dfe6dc;--accent:#2f7d32}
+@media (prefers-color-scheme:dark){:root{--bg:#121712;--fg:#e6eee6;--muted:#9aaa9a;--card:#1a211a;--line:#2b352b;--accent:#6cc070}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
+main{max-width:640px;margin:40px auto;padding:0 16px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+h1{font-size:22px;margin:0 0 6px}p{color:var(--muted)}code{background:var(--bg);padding:2px 6px;border-radius:4px}
+#s{font-weight:600;color:var(--accent)}
+</style></head><body><main><div class="card">
+<h1>🥬 Hasiru Basket WhatsApp assistant (demo)</h1>
+<p>A fictional Bengaluru grocery &amp; milk subscription store. The assistant runs at <code>/api/webhook</code>.</p>
+<p>Status: <span id="s">checking…</span></p>
+</div></main>
+<script>
+fetch("/api/health").then(r=>r.json()).then(h=>{
+  const missing=Object.entries(h.settings).filter(([,v])=>!v).map(([k])=>k);
+  document.getElementById("s").textContent=h.ready?`Ready ✅ (model ${h.model}, storage: ${h.storage})${missing.length?" · optional missing: "+missing.join(", "):""}`:"Missing settings: "+missing.join(", ");
+}).catch(()=>{document.getElementById("s").textContent="Could not reach /api/health"});
+</script></body></html>

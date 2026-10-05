@@ -1,0 +1,14 @@
+{
+  "name": "hasiru-basket-whatsapp-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo WhatsApp AI assistant for a fictional Bengaluru grocery & milk subscription store (WhatsApp Cloud API + Groq + Vercel).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "chat": "node scripts/chat.js",
+    "test": "node --test \"test/*.test.js\""
+  }
+}
